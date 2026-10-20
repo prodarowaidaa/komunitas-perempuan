@@ -1,13 +1,14 @@
 # Belajar Website Pertamamu
 
-Website ini memakai HTML dan CSS tanpa instalasi atau JavaScript.
+Website ini memakai HTML, CSS, dan JavaScript tanpa instalasi tambahan.
 
-## Dua file utama
+## Tiga file utama
 
 | File | Fungsi |
 | --- | --- |
 | index.html | Isi dan susunan halaman: judul, paragraf, tautan, dan bagian website. |
 | style.css | Tampilan: warna, ukuran huruf, jarak, ilustrasi, dan penyesuaian layar HP. |
+| script.js | Interaksi tombol untuk membuka dan menutup semua jawaban FAQ. |
 
 ## Membuka website di komputer
 
@@ -16,7 +17,7 @@ Website ini memakai HTML dan CSS tanpa instalasi atau JavaScript.
 3. Buka folder **website**.
 4. Klik dua kali **index.html** untuk membukanya di browser.
 
-Biarkan index.html dan style.css dalam folder yang sama. Tampilan file HTML di GitHub adalah kode, bukan website yang sudah dirender.
+Biarkan index.html, style.css, dan script.js dalam folder yang sama. Tampilan file HTML di GitHub adalah kode, bukan website yang sudah dirender.
 
 ## Latihan 1 — Mengganti teks (HTML)
 
@@ -71,6 +72,38 @@ Alternatif: gunakan Add file → Upload files pada folder website untuk mengungg
 
 ## Tentang pratinjau
 
-Pratinjau yang dibuat saat penyusunan adalah salinan versi awal. Perubahan di GitHub belum otomatis memperbarui pratinjau tersebut. Minta bantuan memperbarui pratinjau setelah mengubah kode, atau gunakan file lokal untuk langsung melihat hasil latihan.
+Pratinjau menampilkan versi yang terakhir diterbitkan. Perubahan di GitHub belum otomatis memperbarui pratinjau tersebut. Minta bantuan memperbarui pratinjau setelah mengubah kode, atau gunakan file lokal untuk langsung melihat hasil latihan.
 
 Nama komunitas, tanggal, tempat, biaya, dan kontak belum ditentukan. Jangan menambahkan formulir yang tampak menerima pendaftaran sebelum ada proses penyimpanan dan pengelolaan data yang siap.
+
+## Latihan 5 — Interaksi pertama dengan JavaScript
+
+Buka bagian “Mungkin kamu bertanya” di website. Klik **Tampilkan semua jawaban** untuk membuka ketiga jawaban; klik lagi untuk menutup semuanya. Kamu tetap bisa membuka satu pertanyaan saja.
+
+Di script.js, pelajari bagian berikut:
+
+| Kode | Arti |
+| --- | --- |
+| querySelector | Memilih satu elemen HTML. |
+| querySelectorAll | Memilih seluruh elemen yang cocok. |
+| const | Memberi nama pada suatu nilai. |
+| function | Membuat kumpulan instruksi yang dapat dipanggil kembali. |
+| addEventListener("click", ...) | Menjalankan instruksi ketika tombol diklik. |
+| every | Mengecek apakah semua jawaban memenuhi syarat. |
+| forEach | Mengulangi instruksi untuk setiap jawaban. |
+| jawaban.open | Keadaan terbuka (true) atau tertutup (false). |
+| textContent | Mengganti teks tombol. |
+
+Atribut **defer** pada tag script di index.html membuat JavaScript dijalankan setelah HTML selesai dibaca.
+
+### Coba sendiri
+
+1. Unduh ulang ZIP repo agar memperoleh script.js terbaru.
+2. Buka index.html di browser.
+3. Di script.js, ubah teks “Tampilkan semua jawaban” menjadi “Baca semua jawaban”.
+4. Simpan lalu muat ulang browser. Label tombol akan berubah.
+5. Klik tombol dua kali: semua jawaban terbuka lalu tertutup.
+6. Buka semua, lalu tutup satu pertanyaan secara manual. Label kembali menawarkan untuk membuka semua.
+7. Coba tombol dengan Tab lalu Enter atau Spasi.
+
+Tombol disembunyikan sampai JavaScript siap. Jika script gagal dimuat, setiap pertanyaan tetap bisa dibuka dengan fitur HTML bawaan. Perubahan kode tetap perlu disimpan ke GitHub dan diterbitkan ulang agar terlihat pada pratinjau.
