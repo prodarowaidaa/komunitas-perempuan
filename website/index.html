@@ -6,6 +6,7 @@
   <meta name="description" content="Ruang pertemanan, berkarya, dan bertumbuh bagi perempuan dari semua latar belakang.">
   <title>Komunitas Perempuan · Ruang Bertumbuh</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <a class="skip" href="#utama">Langsung ke isi</a>
@@ -59,11 +60,12 @@
     </section>
     <section class="agreements wrap section" aria-labelledby="nyaman"><div><p class="eyebrow">04 / KENYAMANAN KITA, TANGGUNG JAWAB BERSAMA</p><h2 id="nyaman">Ruang yang kita<br>rawat bersama.</h2></div><div class="agreement-list"><p><span>01</span> Berbagi cerita selalu menjadi pilihan.</p><p><span>02</span> Perbedaan dihormati, bukan dihakimi.</p><p><span>03</span> Cerita dan foto dibagikan hanya dengan izin.</p><p><span>04</span> Batas pribadi setiap orang dihargai.</p></div></section>
     <section id="bergabung" class="join"><div class="wrap"><p class="eyebrow">SEBUAH AWAL YANG SEDANG DISIAPKAN</p><h2>Tempatmu untuk tumbuh,<br><em>sedang kita siapkan.</em></h2><p>Pendaftaran belum dibuka. Saat rencana kegiatan dan pengelola sudah siap, informasi bergabung akan ditambahkan di sini.</p><a class="button button-light" href="#kegiatan">Lihat rencana kegiatan ↗</a></div></section>
-    <section class="faq wrap section"><p class="eyebrow">MUNGKIN KAMU BERTANYA</p>
+    <section id="tanya-jawab" class="faq wrap section"><p class="eyebrow">MUNGKIN KAMU BERTANYA</p>
+      <button id="tombol-faq" class="button faq-toggle" type="button" aria-controls="jawaban-1 jawaban-2 jawaban-3" hidden>Tampilkan semua jawaban</button>
       <!-- details dan summary membuat tanya jawab interaktif tanpa JavaScript -->
-      <details><summary>Apakah terbuka untuk semua latar belakang?</summary><p>Ya. Komunitas ini ditujukan bagi perempuan dari berbagai latar belakang. Rentang usia peserta untuk kegiatan pertama masih akan ditentukan.</p></details>
-      <details><summary>Haruskah sudah punya keterampilan kreatif?</summary><p>Tidak. Kegiatan dirancang sebagai ruang mencoba dan belajar bersama. Kamu tidak harus menghasilkan karya yang sempurna.</p></details>
-      <details><summary>Apakah harus bercerita atau ikut foto?</summary><p>Tidak. Kamu boleh memilih untuk mendengarkan dan menolak dokumentasi. Persetujuan untuk mengambil dan memublikasikan foto akan diminta secara terpisah.</p></details>
+      <details id="jawaban-1"><summary>Apakah terbuka untuk semua latar belakang?</summary><p>Ya. Komunitas ini ditujukan bagi perempuan dari berbagai latar belakang. Rentang usia peserta untuk kegiatan pertama masih akan ditentukan.</p></details>
+      <details id="jawaban-2"><summary>Haruskah sudah punya keterampilan kreatif?</summary><p>Tidak. Kegiatan dirancang sebagai ruang mencoba dan belajar bersama. Kamu tidak harus menghasilkan karya yang sempurna.</p></details>
+      <details id="jawaban-3"><summary>Apakah harus bercerita atau ikut foto?</summary><p>Tidak. Kamu boleh memilih untuk mendengarkan dan menolak dokumentasi. Persetujuan untuk mengambil dan memublikasikan foto akan diminta secara terpisah.</p></details>
     </section>
   </main>
   <footer class="wrap footer"><span>✳ komunitas perempuan</span><p>Nama sementara · Dibuat dengan ruang untuk bertumbuh.</p><a href="#utama">Kembali ke atas ↑</a></footer>
